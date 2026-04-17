@@ -5,8 +5,6 @@ import subprocess
 import webbrowser
 import keyboard
 
-e=""
-
 def pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt(command):
     subprocess.run(str(command),shell=True)
     
@@ -57,17 +55,27 @@ def iLikeGamblingSoGiveMeAGamblingMinigamePleaseAndMakeItGood():
         high=True
         
     while gambling:
-        
+        #print(high)
         optionList=['heads','tails']
 
-        if ch == 'y':
-            high=True
         ch=input('continue gambling (y/n)? : ')
         if ch == 'n' or ch =='no':
             gambling=False
             print(f'you have {coins} coins')
             
         picked=False
+        money=False
+
+        while not money:
+            ch=input("how much do you want to gamble: ")
+            try:
+                gambled=int(ch)
+                if gambled>coins:
+                    raise ValueError
+                money=True
+            except ValueError:
+                print('invalid option, please enter valid option')
+
         while not picked:
             ch=input('heads or tails? plz only input h for heads or t for tails: ')
             if ch == 'h' or ch == 't':
@@ -76,7 +84,7 @@ def iLikeGamblingSoGiveMeAGamblingMinigamePleaseAndMakeItGood():
                 print('invalid option, please enter valid option')
             print()
         
-        rando=random.randrange(1,2)
+        rando=random.randrange(1,3)
         
         if (coins>=20 or high) and ch=='h' and rando==1:
             optionList.append('tails')
@@ -88,22 +96,22 @@ def iLikeGamblingSoGiveMeAGamblingMinigamePleaseAndMakeItGood():
         
         if flip == 'heads' and ch == 'h':
             if high:
-                coins+=1
-                print(f'The flip was HEADS. You get 1 coin and have {coins} coins')
+                coins+=gambled
+                print(f'The flip was HEADS. You get {gambled} coin(s) and have {coins} coins')
             elif not high:
-                coins+=1
-                print(f'The flip was HEADS. You get 1 coin and have {coins} coins')
+                coins+=gambled
+                print(f'The flip was HEADS. You get {gambled} coin(s) and have {coins} coins')
                 
         elif flip == 'tails' and ch == 't':
             if high:
-                coins+=1
-                print(f'The flip was TAILS. You get 1 coin and have {coins} coins')
+                coins+=gambled
+                print(f'The flip was TAILS. You get {gambled} coin(s) and have {coins} coins')
             elif not high:
-                coins+=1
-                print(f'The flip was HEADS. You get 1 coin and have {coins} coins')
+                coins+=gambled
+                print(f'The flip was TAILS. You get {gambled} coin(s) and have {coins} coins')
         else:
-            coins-=1
-            print(f'the flip was {flip}. you lose 1 coin and have {coins} coins')
+            coins-=gambled
+            print(f'the flip was {flip}. you lose {gambled} coin(s) and have {coins} coins')
             
         if coins==0 and high:
             print('you lose in high stakes mode. we will shutdown your computer in 30 sec')
@@ -126,8 +134,8 @@ def iNeedMyKeyboardRandomlyMashedForSomeReasonAndICantDoItMyself(num=50):
 def meowTimeBaby(min_interval=30,max_interval=60):
     subprocess.Popen(f"pythonw meow.py {min_interval} {max_interval}", cwd="meow")
 
-#if __name__ == '__main__':
-
+if __name__ == '__main__':
+    iLikeGamblingSoGiveMeAGamblingMinigamePleaseAndMakeItGood()
 
         
         
