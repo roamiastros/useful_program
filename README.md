@@ -12,9 +12,9 @@ to use program:
 
 meow folder contains meow.py  
 to use:  
-1. Open CMD and type cd desktop/useful_program  
-2. run pythonw meow.py  
-3. You now get to hear meows every bit  
+1. Open CMD and type cd downloads/useful_program/meow  (replace downloads with whatever folder this is in)
+2. run pythonw meow.py (number for min interval between meows) (number for max interval between meows)
+3. You now get to hear meows randomly every min_interval to max_interval
 
 Functions:  
 
@@ -52,4 +52,7 @@ This function mashes your keyboard randomly. num is how many characters to mash.
 ex 5. usefulLib.iNeedMyKeyboardRandomlyMashedForSomeReasonAndICantDoItMyself(100)  
 ex 5 types 100 random letters.  
 
-
+usefulLib.meowTimeBaby(min_interval,max_interval)
+This program makes your computer meow randomly each min_interval to max_interval seconds
+ex 6. usefulLib.meowTimeBaby(1,10)
+ex 6 with make your computer meow every 1 to 10 seconds

@@ -126,10 +126,9 @@ def iNeedMyKeyboardRandomlyMashedForSomeReasonAndICantDoItMyself(num=50):
 def meowTimeBaby(min_interval=30,max_interval=60):
     subprocess.Popen(f"pythonw meow.py {min_interval} {max_interval}", cwd="meow")
 
-if __name__ == '__main__':
-    meowTimeBaby(min_interval=30,max_interval=60)
-    print("works")
-        
+#if __name__ == '__main__':
+
+
         
         
         
