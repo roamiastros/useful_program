@@ -24,7 +24,7 @@ ex 1. usefulLib.pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt('ms
 ex 1 makes a popup that says hello appear. Watch out, some commands return errors because there is nowhere to output to!  
 
 usefulLib.iWantToGoToThisWebpagePlease(web)  
-This function opens a webpage! make sure that the webpage name is a string!  
+This function opens a webpage! make sure that the webpage name is a string! (meaning it is surrounded by quotation marks like this "string" or 'string'
 ex 2. usefulLib.iWantToGoToThisWebpagePlease('google.com')  
 ex 2 makes a windows set to google.com appear!  
 
