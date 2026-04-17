@@ -6,7 +6,7 @@ to use program:
 3: type cd downloads, then press enter  
 4: type cd useful_program, then press enter  
 5: type python, then press enter  
-6: type import usefulLib, then press enter  
+6: type import usefulLib, then press enter (if it says no module named keyboard, open a new command prompt and type pip install keyboard)  
 7: Now you can type these functions to do things!  
 (or, you can put import usefulLib in your Python scripts if it is in the same folder as your Python script)  
 
