@@ -18,9 +18,10 @@ def mathFunctionToAddNumbersThatGivesTheRightAnswerSometimes(*args):
     print(f'The answer i got was: {random.randrange(0,e*2)}')
     
 def checkIfIhavePythonOnThisComputerSinceISomehowDontKnow():
-    e=subprocess.check_output('python --version')
+    e=subprocess.check_output('python3 --version')
+    e2=subprocess.check_output('python --version')
     e=str(e)
-    if e[9]=='3':
+    if e[9]=='3' or e2[9]=='3':
         print('Yes! You DO have python on this device')
     else:
         print('NO! You DO NOT have python on this device (or there is a issue with python, which is more likely because this is a python script)')
@@ -138,8 +139,7 @@ def executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(execute):
     execute()
     print(execute)
 
-if __name__ == '__main__':
-    executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(meowTimeBaby)
+#if __name__ == '__main__':
 
         
         
