@@ -8,7 +8,7 @@ to use program:
 5: type python, then press enter  
 6: type import usefulLib, then press enter  
 7: Now you can type these functions to do things!  
-(or, you can put import usefulLib in your Python scripts if it is in the same folder as your Python script)
+(or, you can put import usefulLib in your Python scripts if it is in the same folder as your Python script)  
 
 meow folder contains meow.py  
 to use:  
@@ -24,7 +24,7 @@ ex 1. usefulLib.pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt('ms
 ex 1 makes a popup that says hello appear. Watch out, some commands return errors because there is nowhere to output to!  
 
 usefulLib.iWantToGoToThisWebpagePlease(web)  
-This function opens a webpage! make sure that the webpage name is a string! (meaning it is surrounded by quotation marks like this "string" or 'string'
+This function opens a webpage! make sure that the webpage name is a string! (meaning it is surrounded by quotation marks like this "string" or 'string')  
 ex 2. usefulLib.iWantToGoToThisWebpagePlease('google.com')  
 ex 2 makes a windows set to google.com appear!  
 
