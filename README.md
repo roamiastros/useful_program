@@ -1,26 +1,27 @@
 Hello! Welcome to my documentation for my amazing python program.
 
 to use program:  
-1: download the WHOLE FOLDER to downloads folder  
-2: open command prompt (if you dont know how to open command prompt, press windows and r at the same time, then type cmd and then press enter  
+1: Download the WHOLE FOLDER to the downloads folder  
+2: open command prompt (if you don't know how to open command prompt, press Windows and R at the same time, then type cmd and then press enter  
 3: type cd downloads, then press enter  
 4: type cd useful_program, then press enter  
 5: type python, then press enter  
 6: type import usefulLib, then press enter  
-7: now you can type these functions to do things!  
+7: Now you can type these functions to do things!  
+(or, you can put import usefulLib in your Python scripts if it is in the same folder as your Python script)
 
 meow folder contains meow.py  
 to use:  
-1. open cmd and type cd desktop/useful_program  
+1. Open CMD and type cd desktop/useful_program  
 2. run pythonw meow.py  
-3. you now get to hear meows every bit  
+3. You now get to hear meows every bit  
 
 Functions:  
 
 usefulLib.pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt(command)  
 This function runs a command for you! Make sure that the command is a string!  
 ex 1. usefulLib.pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt('msg * hello')  
-ex 1 makes a popup that says hello appear. watch out, some commands return errors because there is nowhere to output to!  
+ex 1 makes a popup that says hello appear. Watch out, some commands return errors because there is nowhere to output to!  
 
 usefulLib.iWantToGoToThisWebpagePlease(web)  
 This function opens a webpage! make sure that the webpage name is a string!  
