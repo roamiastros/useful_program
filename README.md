@@ -61,3 +61,6 @@ usefulLib.executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(execute)
 This program runs whatever function you put in it without arguments  
 ex 7. usefulLib.executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(usefulLib.meowTimeBaby)  
 ex 7 runs usefulLib.meowTimeBaby
+
+usefulLib.help()
+prints help message

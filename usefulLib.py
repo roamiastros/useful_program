@@ -139,8 +139,12 @@ def executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(execute):
     execute()
     #print(execute)
 
-#if __name__ == '__main__':
+def help():
+    with open('README.md','r') as f:
+        print(f.read())
 
+if __name__ == '__main__':
+    pass
         
         
         
