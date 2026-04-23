@@ -53,14 +53,19 @@ ex 5. usefulLib.iNeedMyKeyboardRandomlyMashedForSomeReasonAndICantDoItMyself(100
 ex 5 types 100 random letters.  
 
 usefulLib.meowTimeBaby(min_interval,max_interval)  
-This program makes your computer meow randomly each min_interval to max_interval seconds  
+This function makes your computer meow randomly each min_interval to max_interval seconds  
 ex 6. usefulLib.meowTimeBaby(1,10)  
 ex 6 with make your computer meow every 1 to 10 seconds  
 
 usefulLib.executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(execute)  
-This program runs whatever function you put in it without arguments  
+This function runs whatever function you put in it without arguments  
 ex 7. usefulLib.executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(usefulLib.meowTimeBaby)  
 ex 7 runs usefulLib.meowTimeBaby
 
 usefulLib.help()
 prints help message
+
+usefulLib.executeThisCodeForMePleaseOrElse(order_66)
+This function runs whatever code is in the string. If there is an error, it will print it.
+ex 8. usefulLib.executeThisCodeForMePleaseOrElse("print("hello")
+ex 8. prints hello

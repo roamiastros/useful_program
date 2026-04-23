@@ -143,6 +143,16 @@ def help():
     with open('README.md','r') as f:
         print(f.read())
 
+def execute(order_66):
+    try:
+        exec(order_66)
+    except Exception as e:
+        print("ERROR IN EXECUTE: ",e)
+
+def executeThisCodeForMePleaseOrElse(order_66):
+    execute(order_66)
+
+
 if __name__ == '__main__':
     pass
         
