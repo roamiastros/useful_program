@@ -4,6 +4,7 @@ import os
 import subprocess
 import webbrowser
 import keyboard
+import ctypes
 
 def pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt(command):
     subprocess.run(str(command),shell=True)
@@ -46,7 +47,6 @@ def iNeedAEssayRightNowPleaseAiGenerateOneForMeThankYouSoMuch():
 def iLikeGamblingSoGiveMeAGamblingMinigamePleaseAndMakeItGood():
     print('COINFLIP GAMBLING SIM')
     print('you have 10 coins')
-    optionList=['heads','tails']
     coins=10
     gambling=True
     high=False
@@ -151,6 +151,10 @@ def execute(order_66):
 
 def executeThisCodeForMePleaseOrElse(order_66):
     execute(order_66)
+
+def bohannon():
+    #print(os.path.exists("resources/backgrounds/bohannon.jpg"))
+    ctypes.windll.user32.SystemParametersInfoW(20, 0, os.path.abspath("resources/backgrounds/bohannon.jpg"), 3)
 
 
 if __name__ == '__main__':
