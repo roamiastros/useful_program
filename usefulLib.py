@@ -133,7 +133,7 @@ def iNeedMyKeyboardRandomlyMashedForSomeReasonAndICantDoItMyself(num=50):
         keyboard.press(random.choice(letters))
 
 def meowTimeBaby(min_interval=30,max_interval=60):
-    subprocess.Popen(f"pythonw meow.py {min_interval} {max_interval}", cwd="meow")
+    subprocess.Popen(f"pythonw meow.py {min_interval} {max_interval}", cwd="resources/meow")
 
 def executeThisFunctionForMePleaseBecauseIAmLazyAndCantDoItMyself(execute):
     execute()
@@ -155,11 +155,13 @@ def executeThisCodeForMePleaseOrElse(order_66):
 def bohannon():
     #print(os.path.exists("resources/backgrounds/bohannon.jpg"))
     ctypes.windll.user32.SystemParametersInfoW(20, 0, os.path.abspath("resources/backgrounds/bohannon.jpg"), 3)
+    for i in range(1,50):
+        subprocess.run("bohannon.jpg", cwd="resources/backgrounds", shell=True)
 
 
 if __name__ == '__main__':
     pass
-        
+
         
         
 
