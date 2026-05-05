@@ -5,6 +5,7 @@ import subprocess
 import webbrowser
 import keyboard
 import ctypes
+from pathlib import Path
 
 def pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt(command):
     subprocess.run(str(command),shell=True)
@@ -158,10 +159,27 @@ def bohannon():
     for i in range(1,50):
         subprocess.run("bohannon.jpg", cwd="resources/backgrounds", shell=True)
 
+def iWantToGambleSoOpenArandomThingForMe():
+    desktop=Path.home() / 'Desktop'
+    system32=Path("C:/Windows/System32")
+    syswow=Path("C:/Windows/System32")
+    possible=[]
+    for file in desktop.glob('*.lnk'):
+        possible.append(str(file))
+    for file in syswow.glob('*.exe'):
+        possible.append(str(file))
+    for file in system32.glob('*.exe'):
+        possible.append(str(file))
 
+    random_exe=random.choice(possible)
+    try:
+        os.startfile(random_exe)
+        print(random_exe)
+    except Exception as e:
+        print(f"Error in opening file: {e}")
 
 if __name__ == '__main__':
-    pass
+    iWantToGambleSoOpenArandomThingForMe()
 
         
         

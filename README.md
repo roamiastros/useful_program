@@ -74,3 +74,6 @@ usefulLib.bohannon()
 bohannon :)
 ex 9. usefulLib.bohannon
 ex 9. does bohannon
+
+usefulLib.iWantToGambleSoOpenArandomThingForMe()
+This function opens a random exe it can find on ur desktop or system
