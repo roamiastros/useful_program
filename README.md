@@ -69,3 +69,8 @@ usefulLib.executeThisCodeForMePleaseOrElse(order_66)
 This function runs whatever code is in the string. If there is an error, it will print it.
 ex 8. usefulLib.executeThisCodeForMePleaseOrElse("print("hello")
 ex 8. prints hello
+
+usefulLib.bohannon()
+bohannon :)
+ex 9. usefulLib.bohannon
+ex 9. does bohannon
