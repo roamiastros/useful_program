@@ -163,14 +163,14 @@ def bohannon():
 def iWantToGambleSoOpenArandomThingForMe():
     desktop=Path.home() / 'Desktop'
     system32=Path("C:/Windows/System32")
-    syswow=Path("C:/Windows/System32")
+    syswow=Path("C:/Windows/sysWOW64")
     possible=[]
     for file in desktop.glob('*.lnk'):
         possible.append(str(file))
     for file in syswow.glob('*.exe'):
         possible.append(str(file))
-    for file in system32.glob('*.exe'):
-        possible.append(str(file))
+    #for file in system32.glob('*.exe'):
+        #possible.append(str(file))
 
     random_exe=random.choice(possible)
     try:
@@ -202,8 +202,9 @@ def giveMeAriddlePleaseSoIcanAnswer():
         print("Shutting down the computer in 60s")
         subprocess.run("shutdown -s -t 60")
 
+
 if __name__ == '__main__':
-    giveMeAriddlePleaseSoIcanAnswer()
+    pass
 
         
         
