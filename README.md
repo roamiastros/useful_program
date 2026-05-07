@@ -77,3 +77,6 @@ ex 9. does bohannon
 
 usefulLib.iWantToGambleSoOpenArandomThingForMe()
 This function opens a random exe it can find on ur desktop or system
+
+usefulLib.giveMeAriddlePleaseSoIcanAnswer()
+This function gives you a riddle, and shuts down your computer if you get it wrong
