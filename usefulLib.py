@@ -6,6 +6,7 @@ import webbrowser
 import keyboard
 import ctypes
 from pathlib import Path
+import csv
 
 def pleaseRunThisCommandForMeSoIdontHaveToRunThisInCommandPrompt(command):
     subprocess.run(str(command),shell=True)
@@ -178,8 +179,29 @@ def iWantToGambleSoOpenArandomThingForMe():
     except Exception as e:
         print(f"Error in opening file: {e}")
 
+def giveMeAriddlePleaseSoIcanAnswer():
+    with open('resources/riddles.csv','r') as f:
+        reader=csv.reader(f)
+        next(reader)
+        riddles={rows[0]:rows[1] for rows in reader}
+    riddle=random.choice(list(riddles.keys()))
+    tries=3
+    success=False
+    while tries > 0:
+        ch=input(f"You have {tries} tries left. Please answer all lowercase \n{riddle}\n Answer: ")
+        if ch==riddles[riddle]:
+            success=True
+        if success:
+            break
+        else:
+            tries-=1
+    if success:
+        print("YOU WIN")
+    else:
+        print(f"You Lose. The Answer was {riddles[riddle]}")
+
 if __name__ == '__main__':
-    iWantToGambleSoOpenArandomThingForMe()
+    giveMeAriddlePleaseSoIcanAnswer()
 
         
         
