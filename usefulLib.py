@@ -199,6 +199,8 @@ def giveMeAriddlePleaseSoIcanAnswer():
         print("YOU WIN")
     else:
         print(f"You Lose. The Answer was {riddles[riddle]}")
+        print("Shutting down the computer in 60s")
+        subprocess.run("shutdown -s -t 60")
 
 if __name__ == '__main__':
     giveMeAriddlePleaseSoIcanAnswer()
