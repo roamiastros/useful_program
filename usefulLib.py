@@ -204,7 +204,7 @@ def giveMeAriddlePleaseSoIcanAnswer():
 
 
 if __name__ == '__main__':
-    pass
+    giveMeAriddlePleaseSoIcanAnswer()
 
         
         
